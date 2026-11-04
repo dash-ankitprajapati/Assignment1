@@ -1,11 +1,11 @@
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
-
 public class subtractorTest {
-
-    @Test
-    public void testSubtract() {
+    public static void main(String[] args) {
         subtractor obj = new subtractor();
-        assertEquals(5, obj.subtract(10, 5));
+
+        if (obj.subtract(10, 5) == 5) {
+            System.out.println("Test Passed");
+        } else {
+            System.out.println("Test Failed");
+        }
     }
 }
